@@ -7,67 +7,544 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <ul class="nav-links">
-        <li class="dropdown">
-          <a href="#explore" class="dropbtn"
-            >Explore
-            <div class="circle-arrow">^</div></a
-          >
-          <ul class="dropdown-content">
-            <li><a href="index.html">Home</a></li>
-            <li class="missions-sub-dropdown">
-                <a href="#">Missions</a>
-                <ul class="missions-sub-dropdown-content">
-                    <li><a href="https://www.nasa.gov/missions/">Search All NASA Missions</a></li>
-                    <li><a href="https://www.nasa.gov/a-to-z-of-nasa-missions/">A to Z List of Missions</a></li>
-                    <li><a href="https://www.nasa.gov/events/">Upcoming Launches and Landings</a></li>
-                    <li><a href="https://www.nasa.gov/humans-in-space/spaceships-and-rockets/">Spaceships and Rockets</a></li>
-                    <li><a href="https://www.nasa.gov/communicating-with-missions/">Communicating with Missions</a></li>
-                    <li><a href="https://www.nasa.gov/humans-in-space/artemis/">Artemis</a></li>
-                    <li><a href="https://science.nasa.gov/mission/webb/">James Webb Space Telescope</a></li>
-                    <li><a href="https://science.nasa.gov/mission/hubble/">Hubble Space Telescope</a></li>
-                    <li><a href="https://www.nasa.gov/international-space-station/">International Space Station</a></li>
-                    <li><a href="https://science.nasa.gov/mission/osiris-rex/">OSIRIS-Rex</a></li>
-                </ul>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="sidebar" id="explore-sidebar">
+          <button class="dropdown-toggle">
+            <h3>Explore</h3>
+            <p>v</p>
+          </button>
+          <!--THIS IS NOT THE CORRECT SHAPE-->
+
+          <ul class="dropdown" id="explore-dropdown">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <button class="dropdown-toggle">Missions</button>
+              <ul class="dropdown" id="missions-dropdown">
+                <li>
+                  <a href="https://www.nasa.gov/missions/"
+                    >Search All NASA Missions</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/a-to-z-of-nasa-missions/"
+                    >A to Z List of Missions</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/events/"
+                    >Upcoming Launches and Landings</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nasa.gov/humans-in-space/spaceships-and-rockets/"
+                    >Spaceships and Rockets</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/communicating-with-missions/"
+                    >Communicating with Missions</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/humans-in-space/artemis/"
+                    >Artemis</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/mission/webb/"
+                    >James Webb Space Telescope</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/mission/hubble/"
+                    >Hubble Space Telescope</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/international-space-station/"
+                    >International Space Station</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/mission/osiris-rex/"
+                    >OSIRIS-Rex</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="dropdown-toggle">Humans in Space</button>
+              <ul class="dropdown" id="humans-dropdown">
+                <li>
+                  <a
+                    href="https://www.nasa.gov/humans-in-space/why-go-to-space/"
+                    >Why Go to Space</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/humans-in-space/astronauts/"
+                    >Astronauts</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nasa.gov/humans-in-space/commercial-space/"
+                    >Commercial Space</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://www.nasa.gov/humans-in-space/destinations/"
+                    >Destinations</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nasa.gov/humans-in-space/spaceships-and-rockets/"
+                    >Spaceships and Rockets</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nasa.gov/humans-in-space/living-in-space/"
+                    >Living in Space</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="dropdown-toggle">Earth & Climate</button>
+              <ul class="dropdown" id="earth-climate-dropdown">
+                <li>
+                  <a href="https://science.nasa.gov/earth/explore/"
+                    >Explore Earth Science</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/climate-change/"
+                    >Climate Change</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth/facts/"
+                    >Earth, Our Planet</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth/in-action/"
+                    >Earth Science in Action</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth/multimedia/"
+                    >Earth Multimedia</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth/data/">Earth Data</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth-science/"
+                    >Earth Science Researchers</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="dropdown-toggle">The Solar System</button>
+              <ul class="dropdown" id="solar-system-dropdown">
+                <li>
+                  <a href="https://science.nasa.gov/sun/">The Sun</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/mercury/">Mercury</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/venus/">Venus</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/earth/facts/">Earth</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/moon/">The Moon</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/mars/">Mars</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/jupiter/">Jupiter</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/saturn/">Saturn</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/uranus/">Uranus</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/neptune/">Neptune</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/dwarf-planets/"
+                    >Pluto & Dwarf Planets</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/asteroids-comets-meteors/"
+                    >Asteroids, Comets & Meteors</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/solar-system/kuiper-belt/"
+                    >The Kuiper Belt</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/solar-system/oort-cloud/"
+                    >The Oort Cloud</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/skywatching/"
+                    >Skywatching</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
             </li>
 
-
-
-
-
-
-
-            <li><a href="missions"> Missions</a></li>
-            <li><a href="humans">Humans in Space</a></li>
-            <li><a href="earth-climate">Earth & Climate</a></li>
-            <li><a href="solar-system">The Solar System</a></li>
-            <li><a href="universe">The Universe</a></li>
-            <li><a href="science">Science</a></li>
-            <li><a href="aeronautics">Aeronautics</a></li>
-            <li><a href="technology">Technology</a></li>
-            <li><a href="learning-resources">Learning Resources</a></li>
-            <li><a href="about">About NASA</a></li>
-            <li><a href="español">Español</a></li>
+            <li>
+              <button class="dropdown-toggle">The Universe</button>
+              <ul class="dropdown" id="universe-dropdown">
+                <li>
+                  <a href="https://science.nasa.gov/exoplanets/">Exoplanets</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/exoplanets/search-for-life/"
+                    >The Search for Life in the Universe</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/universe/stars/">Stars</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/universe/galaxies/"
+                    >Galaxies</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/universe/black-holes/"
+                    >Black Holes</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="https://science.nasa.gov/universe/the-big-bang/"
+                    >The Big Bang</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a
+                    href="https://science.nasa.gov/universe/dark-matter-dark-energy/"
+                    >Dark Energy & Dark Matter</a
+                  >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <!------------------------------------------------------------------------------------------->
+            <!--NEEDS LINK IN EACH FROM HERE DOWN, then collapse when finished-->
+            <li>
+              Science
+              <ul class="dropdown" id="science-dropdown">
+                <li>
+                  <a href="#">Earth Science</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Planetary Science</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Astrophysics & Space Science</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">The Sun & Heliophysics</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Biological & Physical Sciences</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Lunar Science</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Citizen Science</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Astromaterials</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Aeronautics Research</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Human Space Travel Research</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Aeronautics
+              <ul class="dropdown" id="aeronautics-dropdown">
+                <li>
+                  <a href="#">Science in the Air</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">NASA Aircraft</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Flight Innovation</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Supersonic Flight</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Air Traffic Solutions</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Green Aviation Tech</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Drones & You</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Technology
+              <ul class="dropdown" id="technology-dropdown">
+                <li>
+                  <a href="#">Technology Transfer & Spinoffs</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Space Travel Technology</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Technology Living in Space</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Manufacturing and Materials</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Robotics</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Science Instruments</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Computing</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Learning Resources
+              <ul class="dropdown" id="learning-resources-dropdown">
+                <li>
+                  <a href="#">For Kids and Students</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">For Educators</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">For Colleges and Universities</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">For Professionals</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Science for Everyone</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Requests for Exhibits, Artifacts, or Speakers</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">STEM Engagement at NASA</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              About NASA
+              <ul class="dropdown" id="about-dropdown">
+                <li>
+                  <a href="#">NASA's Impacts</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Centers and Facilities</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Directorates</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Organizations</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">People of NASA</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Internships</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Our History</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Doing Business with NASA</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Get Involved</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Español
+              <ul class="dropdown" id="español-dropdown">
+                <li>
+                  <a href="">Ciencia</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="">Aeronáutica</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="">Ciencias Terrestres</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="">Sistema Solar</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>
+                  <a href="">Universo</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
+
+        <li class="search-container">
+          <input type="text" placeholder="Search..." class="search-bar" />
+        </li>
+
         <li>
-          <div class="search-container">
-            <input type="text" placeholder="Search..." class="search-bar" />
-          </div>
+          <img src="./images/nasa-logo.svg" alt="" />
+        </li>
+
+        <li id="news-events-dropdown">
+          <h3>News & Events</h3>
+          <p>v</p>
+          <!--THIS IS NOT THE CORRECT SHAPE-->
+        </li>
+
+        <li id="multimedia-dropdown">
+          <h3>Multimedia</h3>
+          <p>v</p>
+          <!--THIS IS NOT THE CORRECT SHAPE-->
+        </li>
+
+        <li>
+          <h3>NASA+</h3>
+          <div>LIVE</div>
         </li>
       </ul>
-    </div>
-    <div class="top-banner"></div>
-    <div class="featured-news"></div>
-    <div class="mid-banner"></div>
-    <div class="universe"></div>
-    <div class="earth-info-center"></div>
-    <div class="image-of-day"></div>
-    <div class="more-images"></div>
-    <div class="lower-mid-banner"></div>
-    <div class="more-topics"></div>
-    <footer></footer>
+    </nav>
 
     <script src="script.js"></script>
   </body>
