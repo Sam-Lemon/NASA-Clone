@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle-arrow {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+}
