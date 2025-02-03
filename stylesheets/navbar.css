@@ -2,15 +2,58 @@
     background-color: #000; /*PERFECT*/
     color: #ffffff;
     align-items: center;
-    padding: 10px;
+    font-family: sans-serif;
+    padding: 0px;
     /* border: 3px solid yellow; */
     height: 5em; /*PERFECT*/
+
 }
 
 .navbar-links {
+    border: 2px solid hotpink;
     display: flex;
     flex: row;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+#explore {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+#explore-chevron-down {
+    border: 1px solid white; /*PERFECT*/
+    border-radius: 50%; /*PERFECT*/
+    margin: 10px;
+    padding: 3px; /*PERFECT*/
+    font-size: .25em; /*PERFECT*/
+}
+
+#nasa-logo {
+    width: 50px; /*PERFECT*/
+    height: 50px; /*PERFECT*/
+}
+
+.nav-right {
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
 }
 
 .dropdown {
@@ -31,3 +74,4 @@
     align-items: center;
     gap: 10px;
 }
+
