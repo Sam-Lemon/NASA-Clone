@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA clone</title>
-    
+    <link rel="stylesheet" href="../stylesheets/style.css">
+
 </head>
 <body>
+    <div id="navbar"></div>
+    <div id="top-banner"></div>
+    <div id="featured-news"></div>
     
+
+
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+        })
+            .catch(error => console.error(`Error loading ${file}:`, error));
+        }
+
+
+    // Load components
+    loadComponent('navbar', "navbar.html");
+    loadComponent('top-banner', "topBanner.html");
+    loadComponent('featured-news', "featuredNews.html");
+    </script>
+
+
 </body>
 </html>

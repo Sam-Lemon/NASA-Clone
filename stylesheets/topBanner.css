@@ -1,0 +1,22 @@
+.top-banner {
+    background-image: url("../images/iss044e045215_lrg.webp");
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.top-banner h1 {
+
+}
+
+.top-banner p {
+
+}
+
+.top-banner button {
+    background-color: #d83933;
+    color: #fff;
+    border-radius: 3px;
+    padding: 7px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

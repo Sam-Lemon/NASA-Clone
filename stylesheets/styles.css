@@ -2,11 +2,17 @@
 
 /** Import other style sheets  **/
 @import url('navbar.css');
+@import url('topBanner.css');
+@import url('featuredNews.css');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
